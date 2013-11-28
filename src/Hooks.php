@@ -26,19 +26,7 @@ class Hooks {
 			}
 
 			//default settings
-			$parameters = self::getTagConfig($args);
-			$config = array();
-			if(count($parameters->getErrors()) > 0){
-				$errors = wfMessage('sidebarmenu-parser-config-error')."\n";
-				foreach($parameters->getErrors() as $error){
-					$errors .= '* '.$error->getMessage()."\n";
-				}
-				return $errors;
-			}else{
-				foreach($parameters->getParameters() as $param){
-					$config[$param->getName()] = $param->getValue();
-				}
-			}
+			$config = self::getTagConfig($args);
 
 			$id = uniqid('sidebar-menu-id-');
 			$output = '<div id="'.$id.'" class="sidebar-menu-container'.(is_null($config[SBM_CLASS])? '' : ' '.$config[SBM_CLASS]).'" style="display:none;'.(is_null($config[SBM_STYLE])? '' : $config[SBM_STYLE]).'">';
@@ -100,62 +88,14 @@ EOT;
 
 	private static function getTagConfig($args) {
 		global $wgSideBarMenuConfig;
-
-		$parameterDefs = array(
-			array(
-				'name' => 'expanded',
-				'default' => $wgSideBarMenuConfig[SBM_EXPANDED],
-				'type' => 'boolean',
-				'message' => 'sidebarmenu-param-expanded',
-				'aliases' => array('parser.menuitem.expanded'),
-			),
-			array(
-				'name' => 'show',
-				'default' => is_null($wgSideBarMenuConfig[SBM_CONTROLS_SHOW]) ? '['.wfMessage('showtoc')->escaped().']' : $wgSideBarMenuConfig[SBM_CONTROLS_SHOW],
-				'message' => 'sidebarmenu-param-show',
-				'aliases' => array('controls.show'),
-			),
-			array(
-				'name' => 'hide',
-				'default' => is_null($wgSideBarMenuConfig[SBM_CONTROLS_HIDE]) ? '['.wfMessage('hidetoc')->escaped().']' : $wgSideBarMenuConfig[SBM_CONTROLS_HIDE],
-				'message' => 'sidebarmenu-param-hide',
-				'aliases' => array('controls.hide'),
-			),
-			array(
-				'name' => 'animate',
-				'default' => $wgSideBarMenuConfig[SBM_JS_ANIMATE],
-				'type' => 'boolean',
-				'message' => 'sidebarmenu-param-animate',
-				'aliases' => array('js.animate'),
-			),
-			array(
-				'name' => 'editlink',
-				'default' => $wgSideBarMenuConfig[SBM_EDIT_LINK],
-				'type' => 'boolean',
-				'message' => 'sidebarmenu-param-editlink',
-			),
-			array(
-				'name' => 'class',
-				'default' => '',
-				'message' => 'sidebarmenu-param-class',
-			),
-			array(
-				'name' => 'style',
-				'default' => '',
-				'message' => 'sidebarmenu-param-style',
-			),
-			array(
-				'name' => 'minimized',
-				'default' => $wgSideBarMenuConfig[SBM_MINIMIZED],
-				'type' => 'boolean',
-				'message' => 'sidebarmenu-param-minimized',
-			),
-		);
-
-		$processor = Processor::newDefault();
-		$processor->setParameters($args,$parameterDefs);
-		$processedParams = $processor->processParameters();
-
-		return $processedParams;
+		$config[SBM_EXPANDED] = array_key_exists(SBM_EXPANDED, $args) ? filter_var($args[SBM_EXPANDED], FILTER_VALIDATE_BOOLEAN) : $wgSideBarMenuConfig[SBM_EXPANDED];
+		$config[SBM_CONTROLS_SHOW] = array_key_exists(SBM_CONTROLS_SHOW, $args) ? $args[SBM_CONTROLS_SHOW] : (isset($wgSideBarMenuConfig[SBM_CONTROLS_SHOW]) ? $wgSideBarMenuConfig[SBM_CONTROLS_SHOW] : '[' . wfMessage('showtoc')->escaped() . ']');
+		$config[SBM_CONTROLS_HIDE] = array_key_exists(SBM_CONTROLS_HIDE, $args) ? $args[SBM_CONTROLS_HIDE] : (isset($wgSideBarMenuConfig[SBM_CONTROLS_HIDE]) ? $wgSideBarMenuConfig[SBM_CONTROLS_HIDE] : '[' . wfMessage('hidetoc')->escaped() . ']');
+		$config[SBM_JS_ANIMATE] =  array_key_exists(SBM_JS_ANIMATE, $args) ? filter_var($args[SBM_JS_ANIMATE], FILTER_VALIDATE_BOOLEAN) : $wgSideBarMenuConfig[SBM_JS_ANIMATE];
+		$config[SBM_EDIT_LINK] = array_key_exists(SBM_EDIT_LINK, $args) ? filter_var($args[SBM_EDIT_LINK], FILTER_VALIDATE_BOOLEAN) : $wgSideBarMenuConfig[SBM_EDIT_LINK];
+		$config[SBM_CLASS] =  array_key_exists(SBM_CLASS, $args) ? $args[SBM_CLASS] : null;
+		$config[SBM_STYLE] =  array_key_exists(SBM_STYLE, $args) ? $args[SBM_STYLE] : null;
+		$config[SBM_MINIMIZED] = array_key_exists(SBM_MINIMIZED, $args) ? filter_var($args[SBM_MINIMIZED], FILTER_VALIDATE_BOOLEAN) : $wgSideBarMenuConfig[SBM_MINIMIZED];
+		return $config;
 	}
 }
