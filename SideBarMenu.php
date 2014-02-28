@@ -8,6 +8,10 @@ if (!defined('ParamProcessor_VERSION')) {
 	die('SideBarMenu requires extension ParamProcessor');
 }
 
+if ( is_readable( __DIR__ . '/vendor/autoload.php' ) ) {
+	include_once( __DIR__ . '/vendor/autoload.php' );
+}
+
 //SideBarMenu constants
 const SBM_EXPANDED = 'expanded';
 const SBM_CONTROLS_SHOW = 'show';
@@ -28,32 +32,6 @@ $wgSideBarMenuConstants = array(
 	SBM_STYLE,
 	SBM_MINIMIZED,
 );
-
-spl_autoload_register( function ( $className ) {
-	$className = ltrim( $className, '\\' );
-	$fileName = '';
-	$namespace = '';
-
-	if ( $lastNsPos = strripos( $className, '\\') ) {
-		$namespace = substr( $className, 0, $lastNsPos );
-		$className = substr( $className, $lastNsPos + 1 );
-		$fileName  = str_replace( '\\', '/', $namespace ) . '/';
-	}
-
-	$fileName .= str_replace( '_', '/', $className ) . '.php';
-
-	$namespaceSegments = explode( '\\', $namespace );
-
-	if ( $namespaceSegments[0] === 'SideBarMenu' ) {
-		$fileName = substr($fileName,strlen($namespaceSegments[0]));
-		if ( count( $namespaceSegments ) === 1 || $namespaceSegments[1] !== 'Tests' ) {
-			require_once (__DIR__ . '/src/' . $fileName);
-		}
-	}
-} );
-
-call_user_func( function() {
-	global $wgExtensionCredits, $wgExtensionMessagesFiles, $wgExtensionFunctions, $wgResourceModules;
 
 	$wgExtensionCredits['parserhook'][] = array(
 		'path' => __FILE__,
@@ -96,7 +74,5 @@ call_user_func( function() {
 		// Sepcify phpunit tests
 		$wgHooks['UnitTestsList'][]	= 'SideBarMenu\Hooks::registerUnitTests';
 	};
-
-} );
 
 require_once(__DIR__.'/SideBarMenu.settings.php');
