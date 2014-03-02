@@ -112,10 +112,12 @@ $messages['es'] = array(
  * @author Mjbmr
  */
 $messages['fa'] = array(
+	'sidebarmenu-desc' => 'نوار ساده منو تجزیه‌کننده که منو‌های تاشو/قابل ارتقاء و زیرمنوها را ایجاد می‌کند',
 	'sidebarmenu-parser-input-error' => 'تجزیه کننده با خطا بازگردانده شد: $1',
 	'sidebarmenu-parser-syntax-error' => '"$1" نتوانست تجزیه شود، مطمئن شوید نحو صحیح است.',
 	'sidebarmenu-js-init-error' => 'عدم موفقیت بارگذاری منابع جاوااسکرسپت.',
 	'sidebarmenu-edit' => 'منوی ویرایش',
+	'sidebarmenu-parser-menuitem-expanded-null' => 'مقدار نامعتبر داده شده، مقدار باید یکی از تهی،درست،غلط باشد.',
 );
 
 /** French (français)
