@@ -278,6 +278,18 @@ $messages['ms'] = array(
 	'sidebarmenu-parser-menuitem-expanded-null' => 'Nilai yang tidak sah diberikan; nilai seharusnya sama ada null, true, atau false.',
 );
 
+/** Norwegian Bokmål (norsk bokmål)
+ * @author Netbrain
+ */
+$messages['nb'] = array(
+	'sidebarmenu-desc' => 'En enkel sidelinje meny som oppretter kollapsbare/utvidbare menyer og sub-menyer',
+	'sidebarmenu-parser-input-error' => 'Tolker returnerte med feilmelding: $1',
+	'sidebarmenu-parser-syntax-error' => 'Kunne ikke tolke "$1", sørg for at syntaksen er korrekt.',
+	'sidebarmenu-js-init-error' => 'Feilet ved lasting av JavaScript ressurser.',
+	'sidebarmenu-edit' => 'Rediger meny',
+	'sidebarmenu-parser-menuitem-expanded-null' => 'Ugyldig verdi gitt. verdi skal være en av null,true eller false.',
+);
+
 /** Dutch (Nederlands)
  * @author AvatarTeam
  * @author SPQRobin
