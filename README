@@ -1,4 +1,2 @@
-== INSTALL ==
-1. Copy SideBarMenu to /path/to/mediawiki/extension/
-2. append "require_once( "$IP/extensions/SideBarMenu/SideBarMenu.php" );" to LocalSettings.php
-
+Please refer to the following link for documentation:
+https://www.mediawiki.org/wiki/Extension:SideBarMenu
