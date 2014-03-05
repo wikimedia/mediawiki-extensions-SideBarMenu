@@ -12,6 +12,8 @@ if ( is_readable( __DIR__ . '/vendor/autoload.php' ) ) {
 	include_once( __DIR__ . '/vendor/autoload.php' );
 }
 
+global $wgExtensionFunctions,$wgExtensionMessagesFiles, $wgExtensionCredits, $wgHooks, $wgResourceModules;
+
 //SideBarMenu constants
 const SBM_EXPANDED = 'expanded';
 const SBM_CONTROLS_SHOW = 'show';
