@@ -82,6 +82,7 @@ $messages['de'] = array(
 	'sidebarmenu-js-init-error' => 'Das Laden der JavaScripte ist gescheitert.',
 	'sidebarmenu-edit' => 'Menü bearbeiten',
 	'sidebarmenu-parser-menuitem-expanded-null' => 'Es wurde ein ungültiger Wert angegeben. Es sollte entweder „true“ oder „false“, bzw. nichts angegeben sein.',
+	'sidebarmenu-parser-config-error' => 'Beim Überprüfen der Eingabeparameter sind Fehler aufgetreten',
 );
 
 /** Lower Sorbian (dolnoserbski)
@@ -122,6 +123,13 @@ $messages['fa'] = array(
 	'sidebarmenu-parser-menuitem-expanded-null' => 'مقدار نامعتبر داده شده، مقدار باید یکی از تهی،درست،غلط باشد.',
 );
 
+/** Finnish (suomi)
+ * @author Nike
+ */
+$messages['fi'] = array(
+	'sidebarmenu-parser-config-error' => 'Syötteiden tarkistus epäonnistui',
+);
+
 /** French (français)
  * @author Gomoko
  * @author Wyz
@@ -133,6 +141,7 @@ $messages['fr'] = array(
 	'sidebarmenu-js-init-error' => 'Échec au chargement des ressources JavaScript.',
 	'sidebarmenu-edit' => 'Modifier le menu',
 	'sidebarmenu-parser-menuitem-expanded-null' => 'Valeur fournie non valide, elle doit être null, true ou false.',
+	'sidebarmenu-parser-config-error' => 'Il y a des erreurs à la validation des paramètres saisis',
 );
 
 /** Franco-Provençal (arpetan)
@@ -266,6 +275,7 @@ $messages['mk'] = array(
 	'sidebarmenu-js-init-error' => 'Вчитувањето на ресурсите на JavaScript не успеа.',
 	'sidebarmenu-edit' => 'Уреди',
 	'sidebarmenu-parser-menuitem-expanded-null' => 'Зададена е неважечка вредност. Треба да биде „true“, „false“ или да стои незададена.',
+	'sidebarmenu-parser-config-error' => 'Се појавија грешки при потврдувањето на вносните параметри',
 );
 
 /** Malay (Bahasa Melayu)
@@ -392,6 +402,7 @@ $messages['ru'] = array(
 	'sidebarmenu-js-init-error' => 'Не удалось загрузить ресурсы JavaScript.',
 	'sidebarmenu-edit' => 'Редактировать меню',
 	'sidebarmenu-parser-menuitem-expanded-null' => 'Задано недопустимое значение, значение должно быть одним из следующих: null (пусто), true («истина»), false («ложь»).',
+	'sidebarmenu-parser-config-error' => 'Были найдены ошибки проверки входных параметров',
 );
 
 /** Sinhala (සිංහල)
