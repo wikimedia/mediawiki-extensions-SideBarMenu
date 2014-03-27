@@ -17,7 +17,8 @@ $messages['en'] = array(
 	'sidebarmenu-parser-syntax-error' => 'Could not parse "$1", make sure the syntax is correct.',
 	'sidebarmenu-js-init-error' => 'Failed loading JavaScript resources.',
 	'sidebarmenu-edit' => 'Edit menu',
-	'sidebarmenu-parser-menuitem-expanded-null' => 'Invalid value given, value should be one of null,true,false.'
+	'sidebarmenu-parser-menuitem-expanded-null' => 'Invalid value given, value should be one of null,true,false.',
+	'sidebarmenu-parser-config-error' => 'There was errors validating input parameters',
 );
 
 /** Message documentation (Message documentation)
@@ -35,6 +36,7 @@ $messages['qqq'] = array(
 	'sidebarmenu-js-init-error' => 'General error message.',
 	'sidebarmenu-edit' => 'Action link. The text of the link which points to the edit page wherever the sidebarmenu is declared.',
 	'sidebarmenu-parser-menuitem-expanded-null' => 'The value of the expanded property of a menuitem',
+	'sidebarmenu-parser-config-error' => 'There was errors validating input parameters',
 );
 
 /** Asturian (asturianu)
