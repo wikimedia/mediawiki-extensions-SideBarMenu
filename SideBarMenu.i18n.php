@@ -37,8 +37,8 @@ $messages['qqq'] = array(
 	'sidebarmenu-js-init-error' => 'General error message.',
 	'sidebarmenu-edit' => 'Action link. The text of the link which points to the edit page wherever the sidebarmenu is declared.',
 	'sidebarmenu-parser-menuitem-expanded-null' => 'The value of the expanded property of a menuitem',
-	'sidebarmenu-parser-config-error' => 'There was errors validating input parameters',
-	'sidebarmenu-parser-subpage-error-title-not-found' => 'Error message, title of subpage not found'
+	'sidebarmenu-parser-config-error' => 'Config parameters passed to the extension is incorrect (wrong parameter key or value)',
+	'sidebarmenu-parser-subpage-error-title-not-found' => 'Error message, title of subpage not found',
 );
 
 /** Asturian (asturianu)
@@ -85,6 +85,7 @@ $messages['de'] = array(
 	'sidebarmenu-edit' => 'Menü bearbeiten',
 	'sidebarmenu-parser-menuitem-expanded-null' => 'Es wurde ein ungültiger Wert angegeben. Es sollte entweder „true“ oder „false“, bzw. nichts angegeben sein.',
 	'sidebarmenu-parser-config-error' => 'Beim Überprüfen der Eingabeparameter sind Fehler aufgetreten',
+	'sidebarmenu-parser-subpage-error-title-not-found' => 'Der referenzierte Unterseitentitel konnte nicht gefunden werden',
 );
 
 /** Lower Sorbian (dolnoserbski)
@@ -144,6 +145,7 @@ $messages['fr'] = array(
 	'sidebarmenu-edit' => 'Modifier le menu',
 	'sidebarmenu-parser-menuitem-expanded-null' => 'Valeur fournie non valide, elle doit être null, true ou false.',
 	'sidebarmenu-parser-config-error' => 'Il y a des erreurs à la validation des paramètres saisis',
+	'sidebarmenu-parser-subpage-error-title-not-found' => 'Impossible de trouver le titre de la sous-page référencée',
 );
 
 /** Franco-Provençal (arpetan)
@@ -278,6 +280,7 @@ $messages['mk'] = array(
 	'sidebarmenu-edit' => 'Уреди',
 	'sidebarmenu-parser-menuitem-expanded-null' => 'Зададена е неважечка вредност. Треба да биде „true“, „false“ или да стои незададена.',
 	'sidebarmenu-parser-config-error' => 'Се појавија грешки при потврдувањето на вносните параметри',
+	'sidebarmenu-parser-subpage-error-title-not-found' => 'Не можев да го најдам наведениот наслов на потстраницата',
 );
 
 /** Malay (Bahasa Melayu)
@@ -405,6 +408,14 @@ $messages['ru'] = array(
 	'sidebarmenu-edit' => 'Редактировать меню',
 	'sidebarmenu-parser-menuitem-expanded-null' => 'Задано недопустимое значение, значение должно быть одним из следующих: null (пусто), true («истина»), false («ложь»).',
 	'sidebarmenu-parser-config-error' => 'Были найдены ошибки проверки входных параметров',
+	'sidebarmenu-parser-subpage-error-title-not-found' => 'Не удалось найти заголовок упоминаемой подстраницы',
+);
+
+/** Scots (Scots)
+ * @author John Reid
+ */
+$messages['sco'] = array(
+	'sidebarmenu-parser-config-error' => 'Thaur wis mistaks validatin input boondins',
 );
 
 /** Sinhala (සිංහල)
