@@ -24,7 +24,7 @@ class SubPageRenderer {
 				$title = substr( $matches[ 0 ], strpos( $matches[ 0 ], '#subpage ' ) + 9 );
 				$title = Title::newFromText( $title );
 				if ( is_null( $title ) ) {
-					throw new InvalidArgumentException( wfMessage( 'sidebarmenu-parser-subpage-error' ) );
+					throw new InvalidArgumentException( wfMessage( 'sidebarmenu-parser-subpage-error-title-not-found' ) );
 				}
 				$subPages = SubPageRenderer::getHierarchicalSubpages( $title );
 				$code = SubPageRenderer::getSubpagesWikiCode( $subPages, $matches[ 1 ], strlen( $matches[ 2 ] ) );

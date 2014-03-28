@@ -19,6 +19,7 @@ $messages['en'] = array(
 	'sidebarmenu-edit' => 'Edit menu',
 	'sidebarmenu-parser-menuitem-expanded-null' => 'Invalid value given, value should be one of null,true,false.',
 	'sidebarmenu-parser-config-error' => 'There was errors validating input parameters',
+	'sidebarmenu-parser-subpage-error-title-not-found' => 'Could not find the referenced subpage title'
 );
 
 /** Message documentation (Message documentation)
@@ -37,6 +38,7 @@ $messages['qqq'] = array(
 	'sidebarmenu-edit' => 'Action link. The text of the link which points to the edit page wherever the sidebarmenu is declared.',
 	'sidebarmenu-parser-menuitem-expanded-null' => 'The value of the expanded property of a menuitem',
 	'sidebarmenu-parser-config-error' => 'There was errors validating input parameters',
+	'sidebarmenu-parser-subpage-error-title-not-found' => 'Error message, title of subpage not found'
 );
 
 /** Asturian (asturianu)
