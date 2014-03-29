@@ -416,6 +416,7 @@ $messages['ru'] = array(
  */
 $messages['sco'] = array(
 	'sidebarmenu-parser-config-error' => 'Thaur wis mistaks validatin input boondins',
+	'sidebarmenu-parser-subpage-error-title-not-found' => 'Coudna fynd the referanced subpage title',
 );
 
 /** Sinhala (සිංහල)
