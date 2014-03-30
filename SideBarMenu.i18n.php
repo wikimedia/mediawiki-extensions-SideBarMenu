@@ -51,6 +51,8 @@ $messages['ast'] = array(
 	'sidebarmenu-js-init-error' => 'Fallu al cargar los recursos JavaScript.',
 	'sidebarmenu-edit' => 'Editar el menú',
 	'sidebarmenu-parser-menuitem-expanded-null' => 'El valor dau ye inválidu; el valor tien de ser "null", "true" o "false".',
+	'sidebarmenu-parser-config-error' => "Hebo errores al validar los parámetros d'entrada",
+	'sidebarmenu-parser-subpage-error-title-not-found' => "Nun pudo alcontrase'l títulu de la subpáxina de referencia",
 );
 
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
@@ -165,6 +167,8 @@ $messages['gl'] = array(
 	'sidebarmenu-js-init-error' => 'Erro ao cargar os recursos do JavaScript.',
 	'sidebarmenu-edit' => 'Editar o menú',
 	'sidebarmenu-parser-menuitem-expanded-null' => 'O valor achegado non é válido. O valor debe ser "null", "true" ou "false".',
+	'sidebarmenu-parser-config-error' => 'Producíronse erros ao validar os parámetros de entrada',
+	'sidebarmenu-parser-subpage-error-title-not-found' => 'Non se puido atopar o título da subpáxina referenciada',
 );
 
 /** Upper Sorbian (hornjoserbsce)
