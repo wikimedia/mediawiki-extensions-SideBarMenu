@@ -12,7 +12,7 @@ if ( is_readable( __DIR__ . '/vendor/autoload.php' ) ) {
 	include_once( __DIR__ . '/vendor/autoload.php' );
 }
 
-global $wgExtensionFunctions,$wgExtensionMessagesFiles, $wgExtensionCredits, $wgHooks, $wgResourceModules;
+global $wgExtensionFunctions,$wgExtensionMessagesFiles, $wgExtensionCredits, $wgHooks, $wgResourceModules, $wgExtensionMessagesFiles;
 
 //SideBarMenu constants
 const SBM_EXPANDED = 'expanded';
@@ -38,14 +38,15 @@ $wgSideBarMenuConstants = array(
 	$wgExtensionCredits['parserhook'][] = array(
 		'path' => __FILE__,
 		'name' => 'SideBarMenu',
-		'version' => '0.2',
+		'version' => '0.3.0',
 		'author' => 'Kim Eik',
 		'url' => 'https://www.mediawiki.org/wiki/Extension:SideBarMenu',
 		'descriptionmsg' => 'sidebarmenu-desc'
 	);
 
 	//i18n
-	$wgExtensionMessagesFiles['SideBarMenu'] = dirname(__FILE__) . '/SideBarMenu.i18n.php';
+$wgMessagesDirs['SideBarMenu'] = __DIR__ . '/i18n';
+$wgExtensionMessagesFiles['SideBarMenu'] = dirname(__FILE__) . '/SideBarMenu.i18n.php';
 
 	//Resources
 	$wgResourceModules['ext.sidebarmenu.core'] = array(
