@@ -15,13 +15,15 @@ class SubPageRenderer {
 	 * of subpages
 	 *
 	 * @param $input
+	 * @param \Parser $parser
 	 */
-	public static function renderSubPages( &$input ) {
+	public static function renderSubPages( &$input, \Parser &$parser ) {
 		$lines = explode( "\n", $input );
 		for ( $x = 0; $x < count( $lines ); $x ++ ) {
 			$line = & $lines[ $x ];
-			$line = preg_replace_callback( "/([-+]*)(\\**)#subpage .*/", function ( $matches ) {
+			$line = preg_replace_callback( "/([-+]*)(\\**)#subpage .*/", function ( $matches ) use ($parser) {
 				$title = substr( $matches[ 0 ], strpos( $matches[ 0 ], '#subpage ' ) + 9 );
+				$title = $parser->recursiveTagParse($title);
 				$title = Title::newFromText( $title );
 				if ( is_null( $title ) ) {
 					throw new InvalidArgumentException( wfMessage( 'sidebarmenu-parser-subpage-error-title-not-found' ) );
