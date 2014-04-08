@@ -69,7 +69,7 @@ class Hooks {
 
 		}
 		catch( Exception $x ) {
-			wfDebug( "An error occured during parsing of: '$input' caught exception: $x" );
+			wfDebug( "An error occurred during parsing of: '$input' caught exception: $x" );
 			return wfMessage( 'sidebarmenu-parser-input-error', '<strong>' . $x->getMessage() . "</strong>\n<pre>$input</pre>" )->parse();
 		}
 	}
