@@ -1,14 +1,14 @@
 {
-    "@metadata": {
-        "authors": [
-            "Justincheng12345",
-            "Shirayuki"
-        ]
-    },
-    "sidebarmenu-desc": "一個簡單的，可用於創建可摺疊式/可展開式菜單及子菜單的邊欄菜單解析器",
-    "sidebarmenu-parser-input-error": "解析器返回錯誤：$1",
-    "sidebarmenu-parser-syntax-error": "無法解析\"$1\"，請確認語法是否正確。",
-    "sidebarmenu-js-init-error": "JavaScript資源加載失敗。",
-    "sidebarmenu-edit": "編輯菜單",
-    "sidebarmenu-parser-menuitem-expanded-null": "提供的數值無效，數值應為null、true或false。"
+	"@metadata": {
+		"authors": [
+			"Justincheng12345",
+			"Shirayuki"
+		]
+	},
+	"sidebarmenu-desc": "一個簡單的，可用於創建可摺疊式/可展開式菜單及子菜單的邊欄菜單解析器",
+	"sidebarmenu-parser-input-error": "解析器返回錯誤：$1",
+	"sidebarmenu-parser-syntax-error": "無法解析\"$1\"，請確認語法是否正確。",
+	"sidebarmenu-js-init-error": "JavaScript資源加載失敗。",
+	"sidebarmenu-edit": "編輯菜單",
+	"sidebarmenu-parser-menuitem-expanded-null": "提供的數值無效，數值應為null、true或false。"
 }

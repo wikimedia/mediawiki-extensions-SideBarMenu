@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Nike"
-        ]
-    },
-    "sidebarmenu-parser-config-error": "Syötteiden tarkistus epäonnistui"
+	"@metadata": {
+		"authors": [
+			"Nike"
+		]
+	},
+	"sidebarmenu-parser-config-error": "Syötteiden tarkistus epäonnistui"
 }

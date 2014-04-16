@@ -1,13 +1,13 @@
 {
-    "@metadata": {
-        "authors": [
-            "Armando-Martin"
-        ]
-    },
-    "sidebarmenu-desc": "Un analizador (parser) de menú lateral simple que crea menús y submenús colapsables y ampliables",
-    "sidebarmenu-parser-input-error": "El analizador (parser) devolvió el error: $1",
-    "sidebarmenu-parser-syntax-error": "No se pudo analizar \"$1\", asegúrese de que la sintaxis es correcta.",
-    "sidebarmenu-js-init-error": "Error al cargar recursos de JavaScript.",
-    "sidebarmenu-edit": "Editar el menú",
-    "sidebarmenu-parser-menuitem-expanded-null": "El valor dado es inválido, debería ser \"null\", \"true\" o \"false\"."
+	"@metadata": {
+		"authors": [
+			"Armando-Martin"
+		]
+	},
+	"sidebarmenu-desc": "Un analizador (parser) de menú lateral simple que crea menús y submenús colapsables y ampliables",
+	"sidebarmenu-parser-input-error": "El analizador (parser) devolvió el error: $1",
+	"sidebarmenu-parser-syntax-error": "No se pudo analizar \"$1\", asegúrese de que la sintaxis es correcta.",
+	"sidebarmenu-js-init-error": "Error al cargar recursos de JavaScript.",
+	"sidebarmenu-edit": "Editar el menú",
+	"sidebarmenu-parser-menuitem-expanded-null": "El valor dado es inválido, debería ser \"null\", \"true\" o \"false\"."
 }
