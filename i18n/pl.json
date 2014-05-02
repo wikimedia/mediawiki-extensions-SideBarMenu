@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"BeginaFelicysym",
-			"Woytecr"
+			"Woytecr",
+			"Chrumps"
 		]
 	},
 	"sidebarmenu-desc": "Prosty parser dla menu paska bocznego, który tworzy zwijane/rozwijane menu i podmenu",
@@ -10,5 +11,6 @@
 	"sidebarmenu-parser-syntax-error": "Nie można przeanalizować \"$1\", upewnij się, że składnia jest poprawna.",
 	"sidebarmenu-js-init-error": "Nie powiodło się ładowanie zasobów z kodem JavaScript.",
 	"sidebarmenu-edit": "Edytuj menu",
-	"sidebarmenu-parser-menuitem-expanded-null": "Podano niepoprawną wartość, powinna być true, false, null."
+	"sidebarmenu-parser-menuitem-expanded-null": "Podano niepoprawną wartość, powinna być true, false, null.",
+	"sidebarmenu-parser-config-error": "Znaleziono błędy poprawności parametrów wejściowych"
 }
