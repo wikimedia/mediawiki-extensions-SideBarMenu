@@ -9,5 +9,7 @@
 	"sidebarmenu-parser-syntax-error": "Non ge pozze analizzà \"$1\", condrolle ca 'a sindasse jè corrette.",
 	"sidebarmenu-js-init-error": "Carecamende de le resorse JavaScript fallite.",
 	"sidebarmenu-edit": "Cange 'u menu",
-	"sidebarmenu-parser-menuitem-expanded-null": "Valore date invalide, 'u valore avessa essere null, vere, fause."
+	"sidebarmenu-parser-menuitem-expanded-null": "Valore date invalide, 'u valore avessa essere null, vere, fause.",
+	"sidebarmenu-parser-config-error": "Onne assute errore validanne le parametre de ingresse",
+	"sidebarmenu-parser-subpage-error-title-not-found": "Non ge pozze acchià 'u titole d'a sottopàgene de referimende"
 }
