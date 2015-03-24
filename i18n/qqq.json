@@ -4,10 +4,11 @@
 			"Kim Eik",
 			"Nemo bis",
 			"Shirayuki",
-			"Siebrand"
+			"Siebrand",
+			"Umherirrender"
 		]
 	},
-	"sidebarmenu-desc": "{{desc|name=Side Bar Menu|url=http://www.mediawiki.org/wiki/Extension:SideBarMenu}}",
+	"sidebarmenu-desc": "{{desc|name=Side Bar Menu|url=https://www.mediawiki.org/wiki/Extension:SideBarMenu}}",
 	"sidebarmenu-parser-input-error": "Error message on parser error. Parameters:\n* $1 is the error message returned.",
 	"sidebarmenu-parser-syntax-error": "Error message on parsing. Parameters:\n* $1 is the line which failed to be parsed.",
 	"sidebarmenu-js-init-error": "General error message.",
