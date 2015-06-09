@@ -13,7 +13,5 @@
 	"sidebarmenu-parser-syntax-error": "Het was niet mogelijk om \"$1\" te verwerken. Zorg ervoor dat de syntaxis correct is.",
 	"sidebarmenu-js-init-error": "Het laden van de JavaScriptbronnen is mislukt.",
 	"sidebarmenu-edit": "Menu bewerken",
-	"sidebarmenu-parser-menuitem-expanded-null": "Er is een ongeldige waarde opgegeven. De waarde moet null, waar of onwaar zijn.",
-	"sidebarmenu-parser-config-error": "Er werd fouten valideren van de invoer parameters",
-	"sidebarmenu-parser-subpage-error-title-not-found": "Kon het niet vinden waarnaar verwezen wordt, subpagina titel"
+	"sidebarmenu-parser-menuitem-expanded-null": "Er is een ongeldige waarde opgegeven. De waarde moet null, waar of onwaar zijn."
 }
