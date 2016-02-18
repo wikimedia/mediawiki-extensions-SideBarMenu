@@ -1,3 +1,5 @@
+/*jshint -W083 */
+
 (function($,mw){
 
     //IE doesn't support const, use var instead :(
@@ -37,7 +39,7 @@
                     }
 
                     /*Open submenu of current page if current page is present as a link in sidebarmenu*/
-                    var selfLink = container.find('.sidebar-menu-item').find('.selflink')[0]
+                    var selfLink = container.find('.sidebar-menu-item').find('.selflink')[0];
                     if(selfLink !== undefined ){
                         $(selfLink).parents('.sidebar-menu-item-collapsed').removeClass('sidebar-menu-item-collapsed').addClass('sidebar-menu-item-expanded');
                     }
@@ -65,7 +67,7 @@
                             $(this).parents('.sidebar-menu-item:first').toggleClass('sidebar-menu-item-collapsed sidebar-menu-item-expanded', 250).children('.sidebar-menu').show(0, function () {
                                 var _this = $(this);
                                 setTimeout(function () {
-                                    _this.css('display', '')
+                                    _this.css('display', '');
                                 }, 250);
                             });
                         } else {
@@ -76,10 +78,10 @@
                     //must do this in javascript as serverside solution would replace this <a href> link with escaped html characters
                     container.find('.sidebar-menu-item-expand-action').each(function(){
                         $(this).html('<a href="#" onclick="return false;">'+$(this).html()+'</a>');
-                    })
+                    });
                 })(container,config);
             }
             $('.sidebar-menu-container').show();
         }
     });
-})($,mw)
+}( jQuery, mediaWiki ) );
