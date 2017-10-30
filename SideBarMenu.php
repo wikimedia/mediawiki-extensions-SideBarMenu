@@ -46,7 +46,6 @@ $wgSideBarMenuConstants = array(
 
 	//i18n
 $wgMessagesDirs['SideBarMenu'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['SideBarMenu'] = dirname(__FILE__) . '/SideBarMenu.i18n.php';
 
 	//Resources
 	$wgResourceModules['ext.sidebarmenu.core'] = array(
