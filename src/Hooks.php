@@ -80,7 +80,7 @@ class Hooks {
 	 * @return bool
 	 */
 	public static function registerUnitTests( &$files ) {
-		$testDir = dirname( __FILE__ ) . '/test/';
+		$testDir = dirname( __DIR__ ) . '/test/';
 		$testFiles = scandir( $testDir );
 		foreach ( $testFiles as $testFile ) {
 			$absoluteFile = $testDir . $testFile;

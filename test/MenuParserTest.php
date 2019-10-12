@@ -5,6 +5,7 @@
 
 namespace SideBarMenu\Tests;
 
+use InvalidArgumentException;
 use SideBarMenu\MenuParser;
 
 class MenuParserTest extends \MediaWikiTestCase {
@@ -78,12 +79,12 @@ class MenuParserTest extends \MediaWikiTestCase {
 	}
 
 	public function testGetMenuItemWhenInputIsNull() {
-		$this->setExpectedException( 'InvalidArgumentException' );
+		$this->expectException( InvalidArgumentException::class );
 		$this->assertNull( $this->menuParser->getMenuItem( null ) );
 	}
 
 	public function testGetMenuItemWhenInputIsEmpty() {
-		$this->setExpectedException( 'InvalidArgumentException' );
+		$this->expectException( InvalidArgumentException::class );
 		$this->assertNull( $this->menuParser->getMenuItem( "" ) );
 	}
 
