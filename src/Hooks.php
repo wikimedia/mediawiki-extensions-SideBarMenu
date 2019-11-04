@@ -27,7 +27,7 @@ class Hooks {
 
 			if ( strpos( $input, '#subpage ' ) !== false ) {
 				//subpages handling
-				$parser->disableCache();
+				$parser->getOutput()->updateCacheExpiry( 0 );
 				SubPageRenderer::renderSubPages( $input,$parser );
 				$input = str_replace( "\n\n", "\n", $input );
 				$input = trim($input);
