@@ -56,8 +56,7 @@ $wgMessagesDirs['SideBarMenu'] = __DIR__ . '/i18n';
 			'css/ext.sidebarmenu.css'
 		),
 		'dependencies' => array(
-			'jquery.ui.core',
-			'jquery.effects.core',
+			'jquery.ui',
 		),
 		'messages' => array(
 			'sidebarmenu-js-init-error'
