@@ -19,7 +19,7 @@ class MenuParserTest extends \MediaWikiTestCase {
 	 */
 	private $config;
 
-	protected function setUp() {
+	protected function setUp() : void {
 		parent::setUp();
 		$this->config = array( SBM_EXPANDED => true );
 		$this->menuParser = new MenuParser( $this->config );
