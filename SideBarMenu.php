@@ -35,45 +35,45 @@ $wgSideBarMenuConstants = array(
 	SBM_MINIMIZED,
 );
 
-	$wgExtensionCredits['parserhook'][] = array(
-		'path' => __FILE__,
-		'name' => 'SideBarMenu',
-		'version' => '0.3.0',
-		'author' => 'Kim Eik',
-		'url' => 'https://www.mediawiki.org/wiki/Extension:SideBarMenu',
-		'descriptionmsg' => 'sidebarmenu-desc'
-	);
+$wgExtensionCredits['parserhook'][] = array(
+	'path' => __FILE__,
+	'name' => 'SideBarMenu',
+	'version' => '0.3.0',
+	'author' => 'Kim Eik',
+	'url' => 'https://www.mediawiki.org/wiki/Extension:SideBarMenu',
+	'descriptionmsg' => 'sidebarmenu-desc'
+);
 
-	//i18n
+//i18n
 $wgMessagesDirs['SideBarMenu'] = __DIR__ . '/i18n';
 
-	//Resources
-	$wgResourceModules['ext.sidebarmenu.core'] = array(
-		'scripts' => array(
-			'js/ext.sidebarmenu.js'
-		),
-		'styles' => array(
-			'css/ext.sidebarmenu.css'
-		),
-		'dependencies' => array(
-			'jquery.ui',
-		),
-		'messages' => array(
-			'sidebarmenu-js-init-error'
-		),
-		'group' => 'ext.sidebarmenu',
-		'localBasePath' => dirname(__FILE__),
-		'remoteExtPath' => 'SideBarMenu'
-	);
+//Resources
+$wgResourceModules['ext.sidebarmenu.core'] = array(
+	'scripts' => array(
+		'js/ext.sidebarmenu.js'
+	),
+	'styles' => array(
+		'css/ext.sidebarmenu.css'
+	),
+	'dependencies' => array(
+		'jquery.ui',
+	),
+	'messages' => array(
+		'sidebarmenu-js-init-error'
+	),
+	'group' => 'ext.sidebarmenu',
+	'localBasePath' => dirname(__FILE__),
+	'remoteExtPath' => 'SideBarMenu'
+);
 
-	$wgExtensionFunctions[] = function() {
-		global $wgHooks;
+$wgExtensionFunctions[] = function() {
+	global $wgHooks;
 
-		// Specify the function that will initialize the parser function.
-		$wgHooks['ParserFirstCallInit'][] = 'SideBarMenu\Hooks::init';
+	// Specify the function that will initialize the parser function.
+	$wgHooks['ParserFirstCallInit'][] = 'SideBarMenu\Hooks::init';
 
-		// Sepcify phpunit tests
-		$wgHooks['UnitTestsList'][]	= 'SideBarMenu\Hooks::registerUnitTests';
-	};
+	// Sepcify phpunit tests
+	$wgHooks['UnitTestsList'][] = 'SideBarMenu\Hooks::registerUnitTests';
+};
 
 require_once(__DIR__.'/SideBarMenu.settings.php');
