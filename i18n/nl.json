@@ -2,10 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"AvatarTeam",
+			"Rangekill",
 			"SPQRobin",
 			"Siebrand",
-			"Wiki13",
-			"Rangekill"
+			"Wiki13"
 		]
 	},
 	"sidebarmenu-desc": "Een eenvoudige menubalkparser waarmee in- en uiklapbare menu's en submenu's gemaakt kunnen worden",

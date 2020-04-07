@@ -2,8 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"BeginaFelicysym",
-			"Woytecr",
-			"Chrumps"
+			"Chrumps",
+			"Woytecr"
 		]
 	},
 	"sidebarmenu-desc": "Prosty parser dla menu paska bocznego, który tworzy zwijane/rozwijane menu i podmenu",

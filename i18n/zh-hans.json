@@ -2,8 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Linforest",
-			"Yfdyh000",
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"Yfdyh000"
 		]
 	},
 	"sidebarmenu-desc": "一个简单的，可用于创建可折叠式/可展开式菜单及子菜单的边栏菜单解析器",

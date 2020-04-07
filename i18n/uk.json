@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Base",
-			"Andriykopanytsia"
+			"Andriykopanytsia",
+			"Base"
 		]
 	},
 	"sidebarmenu-desc": "Простий парсер бічного меню, який створює згортабельні/розгортабельні меню і підменю",

@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"WikiPhoenix",
-			"Lokal Profil"
+			"Lokal Profil",
+			"WikiPhoenix"
 		]
 	},
 	"sidebarmenu-desc": "En enkel parser i sidofältsmenyn som skapar hopfällbara/expanderbara menyer och undermenyer",
