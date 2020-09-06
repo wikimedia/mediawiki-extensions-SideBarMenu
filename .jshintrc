@@ -1,7 +1,0 @@
-{
-	"jquery": true,
-
-	"globals": {
-		"mediaWiki": false
-	}
-}
