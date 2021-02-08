@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Cainamarques",
-			"Eduardo Addad de Oliveira"
+			"Eduardo Addad de Oliveira",
+			"Eduardoaddad"
 		]
 	},
 	"sidebarmenu-desc": "Um analisador (parser) de menu lateral que possibilita criar menus e sub-menus ocultáveis/expansíveis",
