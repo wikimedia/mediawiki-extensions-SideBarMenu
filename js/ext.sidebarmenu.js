@@ -10,7 +10,7 @@
 		SBM_STYLE = 'style',
 		SBM_MINIMIZED = 'minimized';
 
-	$( document ).ready( function () {
+	$( function () {
 		if ( typeof ( sidebarmenu ) !== 'undefined' ) {
 			for ( var id in sidebarmenu ) {
 				var container = $( '#' + id ),
