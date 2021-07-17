@@ -14,7 +14,6 @@
 		"eqeqeq": "warn",
 		"no-shadow": "warn",
 		"vars-on-top": "warn",
-		"one-var": "warn",
 		"no-unused-vars": "warn",
 		"no-underscore-dangle": "warn",
 		"no-jquery/variable-pattern": "warn",
