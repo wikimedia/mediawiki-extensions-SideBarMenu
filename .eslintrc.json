@@ -13,7 +13,6 @@
 	"rules": {
 		"eqeqeq": "warn",
 		"no-shadow": "warn",
-		"vars-on-top": "warn",
 		"no-unused-vars": "warn",
 		"no-underscore-dangle": "warn",
 		"no-jquery/variable-pattern": "warn",
