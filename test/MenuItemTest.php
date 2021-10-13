@@ -7,7 +7,7 @@ namespace SideBarMenu\Tests;
 
 use SideBarMenu\MenuItem;
 
-class MenuItemTest extends \MediaWikiTestCase {
+class MenuItemTest extends \MediaWikiIntegrationTestCase {
 
 	/**
 	 * @var MenuItem

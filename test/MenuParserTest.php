@@ -8,7 +8,7 @@ namespace SideBarMenu\Tests;
 use InvalidArgumentException;
 use SideBarMenu\MenuParser;
 
-class MenuParserTest extends \MediaWikiTestCase {
+class MenuParserTest extends \MediaWikiIntegrationTestCase {
 
 	/**
 	 * @var MenuParser
