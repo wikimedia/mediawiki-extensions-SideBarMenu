@@ -23,7 +23,7 @@ class Hooks {
 
 	public static function renderSideBarMenuFromTag( $input, array $args, Parser $parser, PPFrame $frame ) {
 		try {
-			$parser->getOutput()->addModules( 'ext.sidebarmenu.core' );
+			$parser->getOutput()->addModules( [ 'ext.sidebarmenu.core' ] );
 
 			if ( strpos( $input, '#subpage ' ) !== false ) {
 				//subpages handling
