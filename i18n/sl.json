@@ -4,5 +4,12 @@
 			"Eleassar"
 		]
 	},
-	"sidebarmenu-edit": "Uredi meni"
+	"sidebarmenu-desc": "Preprost razčlenjevalnik za meni stranske letvice, ki ustvari strnljive/razširljive menije in podmenije",
+	"sidebarmenu-parser-input-error": "Razčlenjevalnik je vrnil napako: $1",
+	"sidebarmenu-parser-syntax-error": "»$1« ni bilo mogoče razčleniti; preverite pravilnost skladnje.",
+	"sidebarmenu-js-init-error": "Nalganje virov JavaScript ni uspelo.",
+	"sidebarmenu-edit": "Uredi meni",
+	"sidebarmenu-parser-menuitem-expanded-null": "Podana neveljavna vrednost; vrednost mora biti »null«, »true« ali »false«.",
+	"sidebarmenu-parser-config-error": "Pri preverjanju vhodnih parametrov so bile odkrite napake",
+	"sidebarmenu-parser-subpage-error-title-not-found": "Sklicevanega naslova podstrani ni bilo mogoče najti"
 }
