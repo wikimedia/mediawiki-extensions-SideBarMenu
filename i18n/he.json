@@ -4,5 +4,12 @@
 			"Amire80"
 		]
 	},
-	"sidebarmenu-edit": "עריכת התפריט"
+	"sidebarmenu-desc": "מפענח פשוט של תפריטים בסרגל הצד, היוצר תפריטים ותת־תפריטים שאפשר להרחיב ולצמצם",
+	"sidebarmenu-parser-input-error": "מפענח חזר עם שגיאה: $1",
+	"sidebarmenu-parser-syntax-error": "לא ניתן לפענח את \"$1\", נא לוודא שהתחביר נכון.",
+	"sidebarmenu-js-init-error": "טעינת משאבי JavaScript נכשלה.",
+	"sidebarmenu-edit": "עריכת התפריט",
+	"sidebarmenu-parser-menuitem-expanded-null": "ניתן ערך בלתי־תקין, הערך צריך להיות אחד של null,true,false.",
+	"sidebarmenu-parser-config-error": "היו שגיאות באימות פרמטרי קלט",
+	"sidebarmenu-parser-subpage-error-title-not-found": "לא היה ניתן למצוא את כותרת דף־המשנה שהוזכר"
 }
