@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Nike"
+			"Nike",
+			"Pyscowicz"
 		]
 	},
+	"sidebarmenu-edit": "Muokkaa valikkoa",
 	"sidebarmenu-parser-config-error": "Syötteiden tarkistus epäonnistui"
 }
